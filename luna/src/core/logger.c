@@ -2,12 +2,15 @@
 #include "assert.h"
 #include "core/asserts.h"
 #include "core/logger.h"
+#include "platform/platform.h"
 
 // TODO(nullshii): remove this temporary includes and implement platform specific log
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
 #include <vadefs.h>
+
+#define MESSAGE_LENGTH 32000
 
 b8 initialize_logging()
 {
@@ -23,14 +26,13 @@ void shutdown_logging()
 void log_output(log_level level, const char* message, ...)
 {
 	const char* level_strings[] = { "[FATAL]: ", "[ERROR]: ", "[WARN]: ", "[INFO]: ", "[DEBUG]: ", "[TRACE]: " };
-	// TODO(nullshii): implement error handling
-	// b8 is_error = level < 2;
+	b8 is_error = level < LOG_LEVEL_WARN;
 
 	// ! Don't do that
-	char out_message[32000];
+	char out_message[MESSAGE_LENGTH];
 	memset(out_message, 0, sizeof(out_message));
 
-	char actual_out_message[32010];
+	char actual_out_message[MESSAGE_LENGTH + 10];
 	memset(actual_out_message, 0, sizeof(actual_out_message));
 
 	// Format message
@@ -41,8 +43,10 @@ void log_output(log_level level, const char* message, ...)
 
 	sprintf_s(actual_out_message, sizeof(actual_out_message), "%s%s\n", level_strings[level], out_message);
 
-	// TODO(nullshii): Handle platform specific output
-	printf_s("%s", actual_out_message);
+	if (is_error)
+		platform_console_write_error(actual_out_message, level);
+	else
+		platform_console_write(actual_out_message, level);
 }
 
 void report_assertion_failure(const char* expression, const char* message, const char* file, i32 line)
