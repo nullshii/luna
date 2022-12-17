@@ -75,7 +75,7 @@ AccessModifierOffset: 0
 #   BAS_AlwaysBreak (in configuration: AlwaysBreak) Always break after an open bracket, if the parameters don’t fit on a single line, e.g.:
 #   someLongFunction(
 #       argument1, argument2);
-AlignAfterOpenBracket: false
+AlignAfterOpenBracket: Align # False
 
 # AlignConsecutiveAssignments (bool)
 # If true, aligns consecutive assignments.
@@ -186,7 +186,7 @@ BreakBeforeBinaryOperators: false
 #   BS_GNU (in configuration: GNU) Always break before braces and add an extra level of indentation to braces of control statements, not to those of class, function or other definitions.
 #   BS_WebKit (in configuration: WebKit) Like Attach, but break before functions.
 #   BS_Custom (in configuration: Custom) Configure each individual brace in BraceWrapping.
-BreakBeforeBraces: GNU
+BreakBeforeBraces: Allman
 
 # BreakBeforeTernaryOperators (bool)
 # If true, ternary operators will be placed after line breaks.
@@ -356,7 +356,7 @@ PenaltyReturnTypeOnItsOwnLine: 20
 
 # SpaceAfterCStyleCast (bool)
 # If true, a space may be inserted after C style casts.
-SpaceAfterCStyleCast: false
+SpaceAfterCStyleCast: true
 
 # SpaceBeforeAssignmentOperators (bool)
 # If false, spaces will be removed before assignment operators.
