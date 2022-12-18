@@ -1,0 +1,85 @@
+# Luna engine
+
+Game engine based on [Kohi](https://kohiengine.com/). Youtube videos from [TravisVroman](https://www.youtube.com/@TravisVroman)
+
+## Playlist complete:
+- [X] Kohi #000: Game Engine Architecture and Overview
+- [X] Kohi #001: Game Engine Setup for WINDOWS
+- [X] Kohi #002: Game Engine Setup for LINUX
+- [X] Kohi #003: Logging and Assertions (Kohi Vulkan Game Engine Series)
+- [X] Kohi #004: Windows Platform Layer
+- [ ] Kohi #005: Linux Platform Layer
+- [ ] Kohi #006: Application Layer and Entry Point
+- [ ] Kohi #007: Memory Subsystem
+- [ ] Kohi #008: Events
+- [ ] Kohi #009: Input Part 1
+- [ ] Kohi #010: Input Part 2 - Windows
+- [ ] Kohi #011: Input Part 3 - Linux
+- [ ] Kohi #012: Renderer Overview
+- [ ] Kohi #013: Starting Vulkan Renderer!
+- [ ] Kohi #014: Vulkan Extensions, Validation Layers, Debugger
+- [ ] Kohi #015: Vulkan Surface and Physical Device
+- [ ] Kohi #016: Vulkan Logical Device and Queues
+- [ ] Kohi #017: Vulkan Swapchain, Images and Depth Buffer
+- [ ] Kohi #018: Vulkan Renderpass
+- [ ] Kohi #019: Vulkan Command Pools and Buffers
+- [ ] Kohi #020: Vulkan Framebuffers and Sync Objects
+- [ ] Kohi #021: BIG Milestone! (Clearing the Screen)
+- [ ] Kohi #022: Build System Update and Math Library Part 1
+- [ ] Kohi #023: Math Library Part 2: Matrices and Quaternions
+- [ ] Kohi #024: Vulkan Graphics Pipeline
+- [ ] Kohi #24.5 Game Engine Development Live Stream
+- [ ] Kohi #025: Vulkan Shader Modules
+- [ ] Kohi # 026: Vulkan Graphics Pipeline
+- [ ] Kohi # 027: Vulkan Buffers
+- [ ] Kohi # 028: A Triangle! A Quad!
+- [ ] Kohi #029: Uniforms and Descriptors
+- [ ] Kohi #029.1: Fixing UBO/Vulkan Crash
+- [ ] Kohi #030: Push Constants and Model Matrix
+- [ ] Kohi #031: Input and Moving the Camera
+- [ ] Kohi #032: Images and Textures, Part 1
+- [ ] Kohi #033: Images and Textures, Part 2
+- [ ] Kohi #034: Loading and Swapping Textures
+- [ ] Kohi #034.1: Fixing Uniform Buffers
+- [ ] Kohi #035: Texture System
+- [ ] Kohi #036: Material System
+- [ ] Kohi #037: Geometry System
+- [ ] Kohi #038: Resource System
+- [ ] Kohi #039: Multiple Render Passes
+- [ ] Kohi #040: Drawing to the UI Layer/2D Geometry
+- [ ] Kohi #041: Roadmap and Series Plans
+- [ ] Kohi #042: Free List (plus a bonus!)
+- [ ] Kohi #043: Dynamic Allocator (Re-Upload)
+- [ ] Kohi #044: Dynamic Vulkan Buffers
+- [ ] Kohi #045: Shader System Part 1
+- [ ] Kohi #046: Shader System Part 2
+- [ ] Kohi #047: Shader System Part 3
+- [ ] Kohi #048: Finalizing the Shader System
+- [ ] Kohi #049: Directional Lighting
+- [ ] Kohi #050: Specular Lighting
+- [ ] Kohi #051: Normal Maps
+- [ ] Kohi #052: Point Lights and Debug Modes
+- [ ] Kohi #053: Meshes, Part 1
+- [ ] Kohi #054: Transforms
+- [ ] Kohi #055: Meshes Part 2: Loading from OBJ File
+- [ ] Kohi #056: Custom Binary Mesh File Format
+- [ ] Kohi #057: Enhancing Texture Maps
+- [ ] Kohi #058: Writeable textures
+- [ ] Kohi #059: Render Targets and Configurable Renderpasses
+- [ ] Kohi #060: Camera System
+- [ ] Kohi #061: View System
+- [ ] Kohi #062: Transparency
+- [ ] Kohi #063: Cubemaps and Skybox
+- [ ] Kohi #064: Toolchain
+- [ ] Kohi #065: Multithreading Part 1, Linux
+- [ ] Kohi #066: Multithreading Part 2, Windows
+- [ ] Kohi #067: Job System
+- [ ] Kohi #068: Jobifying Texture and Mesh Loading
+- [ ] Kohi #069: Bug Fix Pass
+- [ ] Kohi #070: Memory Alignment, Allocator Updates
+- [ ] Kohi #070.1: Alignment Fixes Patch
+- [ ] Kohi #071: Custom Vulkan Allocator
+- [ ] Kohi #072: Generic Renderbuffers
+- [ ] Kohi #073: UTF-8 and Text Rendering Part 1, Bitmap Fonts
+- [ ] Kohi #074: Text Rendering Part 2, Font System and UI Text
+- [ ] Kohi #075: Text Rendering Part 3, System Text
